@@ -1,6 +1,7 @@
 import React from 'react'
 import Features from './Features.jsx'
 import logo from '../assets/react.svg'
+import { Link, useLocation } from 'react-router-dom'
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
         <p className="text-md sm:text-lg md:text-2xl text-slate-700 dark:text-slate-200 mb-4 sm:mb-6 max-w-xl sm:max-w-2xl font-medium text-center">
           Visualize your sales, filter data, and discover insights with interactive dashboards and modern UI widgets.
         </p>
-        <a href="/dashboard" className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg px-5 py-2 sm:px-6 sm:py-3 shadow transition mb-2 dark:bg-blue-900 dark:hover:bg-blue-800">Go to Dashboard</a>
+        <Link  to="/dashboard" className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg px-5 py-2 sm:px-6 sm:py-3 shadow transition mb-2 dark:bg-blue-900 dark:hover:bg-blue-800">Go to Dashboard</Link>
         <div className="text-slate-500 dark:text-slate-300 text-sm mt-1">Use the navigation bar to explore more features.</div>
       </div>
 
