@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../assets/react.svg'
 
 function Navbar({ dark, setDark, isLoggedIn, onLogin, onLogout }) {
   const location = useLocation()
@@ -10,7 +11,7 @@ function Navbar({ dark, setDark, isLoggedIn, onLogin, onLogout }) {
   return (
     <nav className="w-full flex items-center justify-between px-8 py-4 bg-white/80 dark:bg-slate-900/90 shadow-md fixed top-0 left-0 z-50">
       <Link to="/" className="flex items-center gap-3 group">
-        <img src="/vite.svg" alt="Logo" className="w-10 h-10 group-hover:scale-110 transition-transform" />
+        <img src={logo} alt="Logo" className="w-10 h-10 group-hover:scale-110 transition-transform" />
         <span className="text-xl font-bold text-blue-700 dark:text-white group-hover:text-blue-900 transition-colors">SalesApp</span>
       </Link>
       <div className="flex gap-4 items-center relative">

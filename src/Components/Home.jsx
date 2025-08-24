@@ -1,11 +1,12 @@
 import React from 'react'
 import Features from './Features.jsx'
+import logo from '../assets/react.svg'
 
 
 
 function Home() {
   return (
-  <div className="relative min-h-screen w-full flex flex-col items-center justify-start bg-gradient-to-br from-indigo-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 overflow-x-hidden">
+  <img src={logo} alt="App Logo" className="w-20 h-20 sm:w-28 sm:h-28 mb-3 drop-shadow-lg" />
       {/* Hero Section */}
   <div className="w-full flex flex-col items-center justify-center pt-16 pb-8 px-4 sm:px-8 bg-gradient-to-r from-blue-100/80 to-purple-100/60 dark:from-slate-800 dark:to-slate-900">
     <img src="/vite.svg" alt="App Logo" className="w-20 h-20 sm:w-28 sm:h-28 mb-3 drop-shadow-lg" />
